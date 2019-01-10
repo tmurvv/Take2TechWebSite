@@ -1,0 +1,81 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin centerBoxAbs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin clipTextLight {
+    display: inline-block;
+    background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+@mixin clipTextLightRev {
+    display: inline-block;
+    background-image: linear-gradient(to left, $colorWhite, $colorTertiary-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin clipTextDark {
+    background-image: linear-gradient(to right, $colorPrimary, $colorPrimary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+@mixin clipTextDarkRev {
+    background-image: linear-gradient(to left, $colorPrimary-dark, $colorPrimary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin clipTextTertiary {
+    background-image: linear-gradient(to right, $colorSecondary 5%, $colorTertiary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+@mixin clipTextTertiaryRev {
+    background-image: linear-gradient(to right, $colorTertiary-dark, $colorSecondary 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+//MEDIA QUERIES SECTION
+//Recommended order of developing queries--base + typography > grid + page layout > components
+
+//Media query max-width settings do not refer to rems. 
+//We use ems in order to account for changes user has made in default settings
+
+@mixin respond($breakpoint) {  //1em=16px, formula (max or min-screen width) / 16px = ??ems
+    @if $breakpoint == smallPhone {
+        @media only screen and (max-width: 28em) { @content }; //450px  450px/16px (1em) = 37.5em
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }; //600px  600px/16px (1em) = 37.5em
+    }
+    @if $breakpoint == portrait {
+        @media only screen and (max-width: 56.25em) { @content }; //900px 900px/16px (1em) = 56.25em
+    }
+    @if $breakpoint == landscape {
+        @media only screen and (max-width: 75em) { @content }; //1150px 1150px/16px (1em) = 71em
+    }
+    @if $breakpoint == bigScreen {
+        @media only screen and (min-width: 112.5em) { @content }; //1800+px     1800px/16px (1em) = 112.5em
+    }
+}

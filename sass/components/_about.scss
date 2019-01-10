@@ -1,0 +1,54 @@
+.sectionAbout {
+
+    &__container {
+        width: 60%;
+        margin: 3.5rem auto 8rem;
+        padding: 2rem;
+        background-color: $colorWhite;
+        border-radius: .3rem;
+        box-shadow: -8px -8px 20px $colorTertiary inset;
+  
+        @include respond(landscape) {
+            width: 75%;
+        }
+    
+        &--imgCont {
+            height: 15rem;
+            width: 15rem;
+            float: left;
+
+            @include respond(phone) {
+        
+                display: none;
+                }
+          
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            
+            -webkit-clip-path: circle(45% at 50% 50%);
+            clip-path: circle(45% at 50% 50%);
+        }
+
+        &--content {
+
+            font-size: 80%;
+            @include respond(phone) {
+                font-size: 65%;
+            }
+            & > a {
+                color: $colorTertiary;
+            }
+        }
+    }
+}
+
+.sectionAbout__content--imgCont-img {
+    height: 140%;
+    width: 100%;
+
+    @include respond(phone) {
+        
+        height: 140%;
+        width: 100%;
+    }
+}

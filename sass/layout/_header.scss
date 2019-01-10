@@ -1,0 +1,73 @@
+/*////////////////////
+HEADER ELEMENTS INSTRUCTIONS
+////////////////////*/
+
+.header {
+    &__topLineWrapper {
+        height: 15%;
+    }
+    &__logoBox {
+        padding: 1rem;
+        float: left;
+        border-radius: .3rem;
+
+        &--logo {
+            height: 10rem;
+            opacity: .2;
+
+            @include respond(smallPhone) {
+                height: 6rem;
+                opacity: .1;
+
+            }
+        }
+    }
+
+    &__heroBox {
+        @include centerBoxAbs;
+        text-align: center;
+        width: 100%;
+        //see o-headingPrimary in _typography for other font info    
+
+        &--mainHeading {
+            letter-spacing: .8rem;
+            font-weight: 600;
+            &:focus {
+                outline:none;
+            }
+
+            &>span {
+                //@include clipTextTertiaryRev;
+                color: $colorTertiary-dark;
+                font-size: 85%;
+                font-weight: 500;
+            }
+        }
+
+        &--subText {
+            font-weight: 400;           
+            font-size: 75%;
+            // background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark); 
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // color: transparent;
+            color: $colorPrimary-dark;
+
+        }
+    }
+    
+    &.ion-navicon {
+        color: $colorWhite;
+        cursor: pointer;
+        float: right;
+        display: none;
+        font-size: 200%;
+        margin-right: 10px;
+    }
+    &.ion-close {
+        float: right;
+        margin-right: 10px;
+        color: $colorWhite;
+        cursor: pointer;
+    }
+}
