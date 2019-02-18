@@ -1,0 +1,35 @@
+
+<script>
+//         grecaptcha.ready(function() {
+//         grecaptcha.execute('6LdGRpIUAAAAAKZHdmdKI6DuKia0NLVLmiWB1zfh', {action: 'validate_captcha'}).then(function(token) {
+//             document.getElementById('g-recaptcha-response').value = token;
+//         });
+//   });
+  </script>---------
+
+if(isset($_POST["g-recaptcha-response"])){
+            $captcha=$_POST["g-recaptcha-response"];
+        }
+        // if(isset($_POST["name"])){
+        //     $captcha=$_POST["name"];
+        // }
+        else
+            $captcha = false;
+        echo $captcha;
+        echo 'here';
+        exit();
+        if(!$captcha){
+            //Do something with error
+            $result = 'ReCaptcha validation failed abaove.';
+        }
+        else{
+            $secret = $recaptchaSecretKey;
+            $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=
+                .$secret.&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+            if($response.success==false)
+            {
+                //Do something with error
+                $result = 'ReCaptcha validation failed below.';
+                
+            }
+        }

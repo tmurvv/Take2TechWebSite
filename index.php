@@ -52,7 +52,7 @@
                     </li>
 
                     <li class="nav__mainNav--Item">
-                        <a href="mailto:tech@take2tech.ca">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
 
                 </ul>
