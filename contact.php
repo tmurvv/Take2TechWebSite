@@ -4,57 +4,61 @@
     if (isset($_POST['submit'])) {
         $result = '';
 
-        if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
-        {
-            $secret = '6LejVJIUAAAAANMI442a4a_qbWKQFyVFSffkzLI0';
-            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-            $responseData = json_decode($verifyResponse);
-            if($responseData->success)
-            {
-                $result = 'reCaptcha verification successful.';
-            }
-            else
-            {
-                $result = "Please try again.";
-            }
-        }
-
-        if (isset($result) && strpos($result, 'fail') === false) {
-
-            $inputName = $_POST['name'];
-            $inputEmail = $_POST['email'];
-            $inputPhone = $_POST['phone'];
-            $inputMessage = $_POST['message'];
-    
-            $mail_body = '<html>
-            <body style="font-family: Arial, Helvetica, sans-serif;
-                                line-height:1.8em;">
-            <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the J.Dolan Stories website:</p>
-            <p>Name: '.$inputName.'<br>
-            Email: '.$inputEmail.'<br>
-            Phone: '.$inputPhone.'<br>
-            Message: '.$inputMessage.'<br>
-            <br>
-            Have a nice day!<br>
-            take2tech.ca
-            </p>
-            </body>
-            </html>';
-        
-            $subject = "Message from take2tech.ca contact form";
-            $headers = "From: take2tech.ca" . "\r\n";
-            $headers .= "MIME-Version: 1.0" . "\r\n";
-            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['g-recaptcha-response'])) {
             
-            //Error Handling for PHPMailer
-            if(!mail($email, $subject, $mail_body, $headers)){
-                $result = "Email failed to send.";
-            }
-            else{
-                $result = "Email sent!";
-            }
-        }       
+            // Build POST request:
+            $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+            $recaptcha_response = $_POST['g-recaptcha-response'];
+        
+            // Make and decode POST request: $recaptchaSecretKey from config.php file
+            $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptchaSecretKey . '&response=' . $recaptcha_response);
+            $recaptcha = json_decode($recaptcha);
+        
+            // Take action based on the score returned:
+            if (isset($recaptcha->score) && $recaptcha->score >= 0.5) {
+                // Verified - send email
+                if (isset($result) && strpos($result, 'fail') === false) {
+
+                    $inputName = $_POST['name'];
+                    $inputEmail = $_POST['email'];
+                    $inputPhone = $_POST['phone'];
+                    $inputMessage = $_POST['message'];
+            
+                    $mail_body = '<html>
+                    <body style="font-family: Arial, Helvetica, sans-serif;
+                                        line-height:1.8em;">
+                    <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the take2tech.ca website:</p>
+                    <p>Name: '.$inputName.'<br>
+                    Email: '.$inputEmail.'<br>
+                    Phone: '.$inputPhone.'<br>
+                    Message: '.$inputMessage.'<br>
+                    <br>
+                    Have a nice day!<br>
+                    take2tech.ca
+                    </p>
+                    </body>
+                    </html>';
+                
+                    $subject = "Message from take2tech.ca contact form";
+                    $headers = "From: take2tech.ca" . "\r\n";
+                    $headers .= "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    
+                    //Error Handling for PHPMailer
+                    if(!mail($email, $subject, $mail_body, $headers)){
+                        $result = "Email failed to send.";
+                    }
+                    else{
+                        $result = "Email sent!";
+                    }
+                }
+            } else {
+                // Not verified - show form error
+                $result = 'reCaptcha failed. Please try again.';
+            }      
+        }
     }
+   
     $_POST = [];
 ?>
 <!DOCTYPE html>
@@ -71,8 +75,17 @@
 
     <title>take2tech.ca-Contact</title>
 
-    <script src='https://www.google.com/recaptcha/api.js' async defer ></script>
-    
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdGRpIUAAAAAKZHdmdKI6DuKia0NLVLmiWB1zfh"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LdGRpIUAAAAAKZHdmdKI6DuKia0NLVLmiWB1zfh', {action: 'homepage'}).then(function(token) {
+                // pass the token to the backend script for verification
+
+                 // add token value to form for PHP verification
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="contact">
@@ -103,7 +116,8 @@
                         </div>
                         <label for="message">Message:</label>
                         <textarea rows="4" name="message"></textarea><br>
-                        <div class="g-recaptcha" data-sitekey="<?php echo $recaptchaKey; ?>"></div>
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <input type="hidden" name="action" value="validate_captcha">
                         <button type='submit' name='submit'>Submit</button>
                     </div>
                 </form>
