@@ -12,7 +12,11 @@
   "author": "Tisha Murvihill",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "fstream": "^1.0.12",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "mem": "^5.1.1",
+    "tar": "^4.4.10"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
