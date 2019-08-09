@@ -61,7 +61,11 @@ body {
 
 h4 {
   text-align: center;
-  color: #b8a668; }
+  font-weight: 400;
+  background-image: linear-gradient(to left, #20201B, #d5c89a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
 
 .u-underline {
   text-decoration: underline; }
@@ -398,7 +402,7 @@ HEADER ELEMENTS INSTRUCTIONS
       clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 100%); } }
 
 .footer {
-  background-color: #310a20;
+  background-color: #20201B;
   padding: 4rem; }
 
 .testIcon {

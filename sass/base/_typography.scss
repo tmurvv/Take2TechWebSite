@@ -51,5 +51,10 @@ body {
 
 h4 {
     text-align: center;
-    color: $colorPrimaryHeader;
+    font-weight: 400;
+    //color: $colorPrimaryHeader;
+    background-image: linear-gradient(to left, $veryDark, $colorPrimary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

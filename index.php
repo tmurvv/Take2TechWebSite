@@ -23,7 +23,7 @@
     <script src="js\jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js\script.js"></script>
 
-    <title>Tisha Murvihill, Developer</title>
+    <title>Tisha Murvihill, Web Developer</title>
 
 </head>
 
@@ -39,12 +39,8 @@
                 <ul class="nav__mainNav js--main-nav">
                     <li class="nav__mainNav--Item">
                         <span>
-                            <a href="#projects">View projects</a>
+                            <a href="#projects">View portfolio</a>
                         </span>
-                    </li>
-
-                    <li class="nav__mainNav--Item">
-                        <a href="#pricing">Pricing</a>
                     </li>
 
                     <li class="nav__mainNav--Item">
@@ -90,43 +86,40 @@
                 React<br>
             </p>
         </div>
-        <div class="marquee-wrap">
-            
+        <div class="marquee-wrap">          
             <div class="marquee">
                 <p>Fully Responsive<br>
                     Git version control<br>
-                    SQL<br>
                     React-Hooks<br>
                     React-Router<br>
                     React-Material-ui<br>
+                    JSS<br>
                     NPM<br>
+                    SQL<br>
+                    BEM<br>
                     jQuery<br>
-                    Intersection Observer<br>
-                    Cloudinary CDN<br>
-                    BEM<br>                      
+                    Cloudinary CDN<br> 
+                    Intersection Observer<br>                                                         
                 </p>
             </div>
         </div>
-
-
     </header>
     <section class="sectionProjects" id="projects">
 
         <div class="o-centerHeading">
-            <h2 class="o-headingSecondary">Sample Projects</h2>
+            <h2 class="o-headingSecondary">Portfolio</h2>
         </div>
         <!-- <h4 class="sectionProjects--subText">All sites are
             <a href="#mobileFriendly" class="js--openGlossary">mobile friendly</a> using current
             <a href="#seo" class="js--openGlossary">search engine optimization</a> and
             <a href="#performance" class="js--openGlossary">performance optimization</a> techniques.</h4> -->
 
-        <h4>Please note my speciality is functionality, not design.<br>Let me help bring your client's design to reality!!</h4>
+        <h4>Please note my speciality is functionality, not design.<br>I am open to new technologies/processes and I love to learn!!</h4>
         <div class="cardWrapper">
             <div class="card">
                 <div class="card__side card__side--front js--popup1">
-
                     <p>'Frecent' Shopping List</p>
-                    <p class='card__side--front-subText'>public facing subscription webapp</p>
+                    <p class='card__side--front-subText'>Public-facing Subscription WebApp</p>
                     <div class="card__side--front-imgContainer1">
                         <img class="card__side--front-img" alt="Frecent List WebApp Landing Page" src="img/frecentListScreenShot.jpg">
                     </div>
@@ -141,24 +134,23 @@
                 </div>
 
                 <div class="card__side card__side--back" id="popup1">
-                    Public facing subscription webapp
-                    <br> Technical Specs
+                    'Frecent' Shopping List
+                    <br> Public-facing Subscription WebApp
                     <ul class="o-list">
-                        <li>
-                            <a href="#mobileFriendly" class="js--openGlossary">&#10003;&nbsp;&nbsp;mobile friendly</a>
-                        </li>
-                        <li>
-                            <a href="#responsiveImages" class="js--openGlossary">&#10003;&nbsp;&nbsp;responsive images</a>
-                        </li>
-                        <li>
-                            <a href="#js" class="js--openGlossary">&#10003;&nbsp;&nbsp;javascript</a>/
-                            <a href="#php" class="js--openGlossary">PHP</a>
-                        </li>
                         <li>
                             <a href="#seo" class="js--openGlossary">&#10003;&nbsp;&nbsp;membership login</a>
                         </li>
                         <li>
-                            <a href="#performance" class="js--openGlossary">&#10003;&nbsp;&nbsp;premium level subscriptions</a>
+                            <a href="#responsiveImages" class="js--openGlossary">&#10003;&nbsp;&nbsp;subscriptions thru PayPal</a>
+                        </li>
+                        <li>
+                            <a href="#mobileFriendly" class="js--openGlossary">&#10003;&nbsp;&nbsp;fully responsive</a>
+                        </li>                       
+                        <li>
+                            <a href="#js" class="js--openGlossary">&#10003;&nbsp;&nbsp;vanilla javascript</a>
+                        </li>                   
+                        <li>
+                            <a href="#performance" class="js--openGlossary">&#10003;&nbsp;&nbsp;PHP/SQL</a>
                         </li>
                     </ul>
                     <div class="card__side--back-btnContainer">
@@ -186,11 +178,9 @@
                     </div>
 
                 </div>
-
                 <div class="card__side card__side--back popup" id="popup2">
                     <p>JobBoard
-                        <br>Technical Specs</p>
-
+                        <br>w/custom client backend</p>
                     <ul class="o-list">
                         <li>
                             <a href="#php" class="js--openGlossary">&#10003;&nbsp;&nbsp;php</a>
@@ -210,10 +200,10 @@
                         <li>
                             <a href="#architechture" class="js--openGlossary">&#10003;&nbsp;&nbsp;7-1 Architechture</a>
                         </li>
-
                     </ul>
                     <div class="card__side--back-btnContainer">
                         <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack2">Back</button><br>
+                        <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>
                         <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
                     </div>
                 </div>
@@ -222,7 +212,7 @@
             <div class="card">
                 <div class="card__side card__side--front js--popup3">
 
-                    <p>Tiffany Hansen, harp</p>
+                    <p>Tiffany Hansen, harpist</p>
                     <p class="card__side--front-subText">Static Brochure Website</p>
                     <div class="card__side--front-imgContainer2">
                         <img class="card__side--front-img" alt="take2tech.ca Landing Page" src="img/albertaHarpistScreenShot.jpg">
@@ -238,8 +228,8 @@
                 </div>
 
                 <div class="card__side card__side--back popup" id="popup3">
-                    Static Brochure Website
-                    <br> Technical Specs
+                    Tiffany Hansen, harpist
+                    <br> Static Brochure Website
                     <ul class="o-list">
                         <li>
                             &#10003;&nbsp;&nbsp;Adv CSS
@@ -286,10 +276,9 @@
                     </div>
 
                 </div>
-
                 <div class="card__side card__side--back popup" id="popup4">
                     Fun Facts Train Games
-                    <br> Technical Specs
+                    <br> React App
                     <ul class="o-list">
                         <li>
                             <a href="#mobileFriendly" class="js--openGlossary">&#10003;&nbsp;&nbsp;React Router</a>
@@ -309,8 +298,7 @@
                         <li>
                             <a href="#git" class="js--openGlossary">&#10003;&nbsp;&nbsp;Git versioning</a>
                         </li>
-                    </ul>
-                    
+                    </ul>                    
                     <div class="card__side--back-btnContainer">
                         <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack4">Back</button><br>
                         <a href="TTT/FeedbackSurvey/index.php" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
@@ -345,12 +333,10 @@
         </div>
     </section>
     <footer class="footer" id="footer">
-
         <div class="footer__menuContainer">
             <div class="footer__menuContainer--menu">
                 <a href="#top" class="footer__menuContainer--menu-item">Home</a>
-                <a href="#projects" class="footer__menuContainer--menu-item">Websites</a>
-                <a href="#pricing" class="footer__menuContainer--menu-item">Pricing</a>
+                <a href="#projects" class="footer__menuContainer--menu-item">Portfolio</a>
                 <a href="#about" class="footer__menuContainer--menu-item">About</a>
             </div>
 
@@ -366,12 +352,10 @@
 
         <div class="footer__copy">
             <p>Some design ideas courtesy of Jonas Schmedtmann. Used with permission.</p>
-            <p>&copy; 2018 by take2tech.ca. All rights reserved. ver 4.27-m</p>
+            <p>&copy; 2019 by take2tech.ca. All rights reserved. ver 8.08-m</p>
 
         </div>
     </footer>
-
-
 </body>
 
 </html>

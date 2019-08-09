@@ -11,7 +11,9 @@
   },
   "author": "Tisha Murvihill",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "node-sass": "^4.11.0",
