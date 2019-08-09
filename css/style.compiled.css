@@ -504,39 +504,34 @@ HEADER ELEMENTS INSTRUCTIONS
         .card__side--back {
           transform: none; } }
       .card__side--back > .o-list {
-        margin: 2rem 2rem 0;
+        margin: .5rem 2rem 1.5rem;
         text-decoration: none;
         font-size: 80%;
         text-transform: capitalize;
         padding: 15px;
-        border-radius: 7px; }
-        .card__side--back > .o-list > li > a:link,
-        .card__side--back > .o-list > li > a:visited {
-          text-decoration: none;
-          color: #d5c89a; }
-        .card__side--back > .o-list > li > a:hover,
-        .card__side--back > .o-list > li > a:active {
-          color: #d5c89a; }
+        border-radius: 7px;
+        color: #d5c89a; }
+      .card__side--back > button {
+        opacity: 1;
+        visibility: visible;
+        color: #d5c89a;
+        text-align: left;
+        width: 100%;
+        margin-top: -62px;
+        font-size: 66px; }
+        .card__side--back > button:hover {
+          text-decoration: none; }
       .card__side--back-btn {
         width: 80%;
         margin: -1rem auto 0;
         background-color: transparent;
-        color: #fff7ed;
+        color: #ffffff;
         cursor: pointer;
         font-weight: 300; }
         .card__side--back-btn :focus {
           outline: none; }
-        .card__side--back-btn a:link {
-          color: #d5c89a;
-          text-decoration: none;
-          font-family: 'Lato', 'Arial', san-serif;
-          font-size: 2rem;
-          font-weight: 300; }
         .card__side--back-btnContainer {
           margin-bottom: 2rem; }
-          .card__side--back-btnContainer > button {
-            opacity: 1;
-            visibility: visible; }
   @media only screen and (max-width: 75em) {
     .card:hover .card__side--front {
       transform: none; } }

@@ -125,10 +125,9 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical1">Technical Details</button>
-                        <p>
-                            <a href="https://www.frecentlist.com" class="o-linkStyle-light" target="_blank">Visit Site</a>
-                        </p>
+                        <button class="o-linkStyle-light js--cardFrontTechnical1">Technical Details</button><br>
+                        <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
+                        <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
@@ -138,25 +137,26 @@
                     <br> Public-facing Subscription WebApp
                     <ul class="o-list">
                         <li>
-                            <a href="#seo" class="js--openGlossary">&#10003;&nbsp;&nbsp;membership login</a>
+                            &#10003;&nbsp;&nbsp;membership login
                         </li>
                         <li>
-                            <a href="#responsiveImages" class="js--openGlossary">&#10003;&nbsp;&nbsp;subscriptions thru PayPal</a>
+                            &#10003;&nbsp;&nbsp;subscriptions thru PayPal
                         </li>
                         <li>
-                            <a href="#mobileFriendly" class="js--openGlossary">&#10003;&nbsp;&nbsp;fully responsive</a>
+                            &#10003;&nbsp;&nbsp;fully responsive
                         </li>                       
                         <li>
-                            <a href="#js" class="js--openGlossary">&#10003;&nbsp;&nbsp;vanilla javascript</a>
+                            &#10003;&nbsp;&nbsp;vanilla javascript
                         </li>                   
                         <li>
-                            <a href="#performance" class="js--openGlossary">&#10003;&nbsp;&nbsp;PHP/SQL</a>
+                            &#10003;&nbsp;&nbsp;PHP/SQL
                         </li>
                     </ul>
                     <div class="card__side--back-btnContainer">
-                        <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack1">Back</button><br>
-                        <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
+                        <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
+                        <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
+                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack1">&#8249;</button><br>
 
                 </div>
             </div>
@@ -165,47 +165,46 @@
                 <div class="card__side card__side--front js--popup2">
 
                     <p>Innovation College JobBoard</p>
-                    <p class='card__side--front-subText'>PHP/SQL backend</p>
+                    <p class='card__side--front-subText'>Custom Client Backend</p>
                     <div class="card__side--front-imgContainer3">
                         <img class="card__side--front-img" alt="JobBoard Landing Page" src="img/JobBoardScreenShot.png">
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical2">Technical Details</button>
-                        <p>
-                            <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light">Visit Site</a>
-                        </p>
+                        <button class="o-linkStyle-light js--cardFrontTechnical2">Technical Details</button><br>
+                        <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
+                        <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
                 <div class="card__side card__side--back popup" id="popup2">
                     <p>JobBoard
-                        <br>w/custom client backend</p>
+                        <br>Custom Client Backend</p>
                     <ul class="o-list">
                         <li>
-                            <a href="#php" class="js--openGlossary">&#10003;&nbsp;&nbsp;php</a>
+                            &#10003;&nbsp;&nbsp;php
                         </li>
                         <li>
-                            <a href="#git" class="js--openGlossary">&#10003;&nbsp;&nbsp;Git versioning</a>
+                            &#10003;&nbsp;&nbsp;Git versioning</a>
                         </li>
                         <li>
-                            <a href="#bem" class="js--openGlossary">&#10003;&nbsp;&nbsp;BEM naming</a>
+                            &#10003;&nbsp;&nbsp;BEM naming</a>
                         </li>
                         <li>
-                            <a href="#sass" class="js--openGlossary">&#10003;&nbsp;&nbsp;Sass</a>
+                            &#10003;&nbsp;&nbsp;Sass</a>
                         </li>
                         <li>
-                            <a href="#node" class="js--openGlossary">&#10003;&nbsp;&nbsp;Node build process</a>
+                            &#10003;&nbsp;&nbsp;NPM build process</a>
                         </li>
                         <li>
-                            <a href="#architechture" class="js--openGlossary">&#10003;&nbsp;&nbsp;7-1 Architechture</a>
+                            &#10003;&nbsp;&nbsp;7-1 Architechture</a>
                         </li>
                     </ul>
                     <div class="card__side--back-btnContainer">
-                        <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack2">Back</button><br>
-                        <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>
-                        <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
+                        <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
+                        <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
+                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack2">&#8249;</button><br>
                 </div>
             </div>
             
@@ -219,10 +218,9 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical3">Technical Details</button>
-                        <p>
-                            <a href="https://www.albertaharpist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>
-                        </p>
+                        <button class="o-linkStyle-light js--cardFrontTechnical3">Technical Details</button><br>
+                        <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
+                        <a href="https://albertaharpist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
@@ -235,27 +233,28 @@
                             &#10003;&nbsp;&nbsp;Adv CSS
                         </li>
                         <li>
-                            <a href="#responsiveImages" class="js--openGlossary">&#10003;&nbsp;&nbsp;Intersection Observer</a>
+                            &#10003;&nbsp;&nbsp;Intersection Observer
                         </li>
                         <li>
-                            <a href="#sass" class="js--openGlossary">&#10003;&nbsp;&nbsp;SASS</a>
+                            &#10003;&nbsp;&nbsp;SASS
                         </li>
                         <li>
-                            <a href="#php" class="js--openGlossary">&#10003;&nbsp;&nbsp;PHP</a>
+                            &#10003;&nbsp;&nbsp;PHP Contact Form
                         </li>
                         <li>
-                            <a href="#git" class="js--openGlossary">&#10003;&nbsp;&nbsp;Git versioning</a>
+                            &#10003;&nbsp;&nbsp;Git versioning
                         </li>
                         
                         <li>
-                            <a href="#node" class="js--openGlossary">&#10003;&nbsp;&nbsp;images served by Cloudinary</a>
+                            &#10003;&nbsp;&nbsp;Cloudinary CDN
                         </li>
                     </ul>
                     
                     <div class="card__side--back-btnContainer">
-                        <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack3">Back</button><br>
-                        <a href="TTT/FeedbackSurvey/index.php" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
+                        <a href="https://albertaharpist.com/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
+                        <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
+                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack3">&#8249;</button><br>
 
                 </div>
             </div>
@@ -269,40 +268,40 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical4">Technical Details</button>
-                        <p>
-                            <a href="http://funfactsTrains.take2tech.ca" target="_blank" class="o-linkStyle-light">Visit Site</a>
-                        </p>
+                        <button class="o-linkStyle-light js--cardFrontTechnical4">Technical Details</button><br>
+                        <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
+                        <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
                 <div class="card__side card__side--back popup" id="popup4">
-                    Fun Facts Train Games
+                    Fun Facts Train Game
                     <br> React App
                     <ul class="o-list">
                         <li>
-                            <a href="#mobileFriendly" class="js--openGlossary">&#10003;&nbsp;&nbsp;React Router</a>
+                            &#10003;&nbsp;&nbsp;React Router
                         </li>
                         <li>
-                            <a href="#responsiveImages" class="js--openGlossary">&#10003;&nbsp;&nbsp;JSS</a>
+                            &#10003;&nbsp;&nbsp;JSS
                         </li>
                         <li>
-                            <a href="#sass" class="js--openGlossary">&#10003;&nbsp;&nbsp;Material-ui</a>
+                            &#10003;&nbsp;&nbsp;Material-ui
                         </li>                       
                         <li>
-                            <a href="#node" class="js--openGlossary">&#10003;&nbsp;&nbsp;Create-React-App</a>
+                            &#10003;&nbsp;&nbsp;Create-React-App
                         </li>
                         <li>
-                            <a href="#php" class="js--openGlossary">&#10003;&nbsp;&nbsp;ES6 w/arrow functions</a>
+                            &#10003;&nbsp;&nbsp;javascript/ES6
                         </li>
                         <li>
-                            <a href="#git" class="js--openGlossary">&#10003;&nbsp;&nbsp;Git versioning</a>
+                            &#10003;&nbsp;&nbsp;Git versioning
                         </li>
                     </ul>                    
                     <div class="card__side--back-btnContainer">
-                        <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack4">Back</button><br>
-                        <a href="TTT/FeedbackSurvey/index.php" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a>
+                        <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
+                        <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
+                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack4">&#8249;</button><br>
 
                 </div>
             </div>
