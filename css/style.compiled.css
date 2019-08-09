@@ -79,7 +79,7 @@ h4 {
 
 .o-linkStyle-light {
   background-color: transparent;
-  color: #948D7F;
+  color: #fff7ed;
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
   font-size: 2rem;
@@ -405,28 +405,31 @@ HEADER ELEMENTS INSTRUCTIONS
   color: orangered;
   margin-right: 10px; }
 
-.sectionProjects--subText {
-  width: 50%;
-  margin: 3rem auto 8rem auto; }
-  .sectionProjects--subText > a {
-    background-image: linear-gradient(to left, #72695A, #b8a668);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
-    @media only screen and (max-width: 28em) {
-      .sectionProjects--subText > a {
-        color: #72695A;
-        text-decoration: none;
-        background-image: none;
-        -webkit-background-clip: initial;
-        background-clip: initial; } }
-  @media only screen and (max-width: 75em) {
-    .sectionProjects--subText {
-      width: 60%; } }
-  @media only screen and (max-width: 37.5em) {
-    .sectionProjects--subText {
-      margin-bottom: 5rem;
-      font-size: 75%; } }
+.sectionProjects {
+  max-width: 950px;
+  margin: auto; }
+  .sectionProjects--subText {
+    width: 50%;
+    margin: 3rem auto 8rem auto; }
+    .sectionProjects--subText > a {
+      background-image: linear-gradient(to left, #72695A, #b8a668);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; }
+      @media only screen and (max-width: 28em) {
+        .sectionProjects--subText > a {
+          color: #72695A;
+          text-decoration: none;
+          background-image: none;
+          -webkit-background-clip: initial;
+          background-clip: initial; } }
+    @media only screen and (max-width: 75em) {
+      .sectionProjects--subText {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .sectionProjects--subText {
+        margin-bottom: 5rem;
+        font-size: 75%; } }
 
 .cardWrapper {
   width: 100%;
@@ -434,7 +437,8 @@ HEADER ELEMENTS INSTRUCTIONS
   justify-content: space-around;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  margin-top: 50px; }
 
 .card {
   perspective: 150rem;
@@ -457,15 +461,18 @@ HEADER ELEMENTS INSTRUCTIONS
     border-radius: 7px;
     border: 1px transparent #ffffff;
     text-align: center;
-    box-shadow: -10px -10px 20px #948D7F inset; }
+    box-shadow: 5px 5px 20px -5px #868686; }
     .card__side--front {
-      background-color: #72695a;
+      background-color: #20201b;
       color: #d5c89a;
       position: absolute;
       top: 0;
       left: 0;
       padding-bottom: 4rem;
       padding-top: 4rem; }
+      .card__side--front-subText {
+        font-style: italic;
+        font-size: 13px; }
       .card__side--front-imgContainer1 {
         width: 76%;
         height: 51%;
@@ -502,7 +509,7 @@ HEADER ELEMENTS INSTRUCTIONS
         .card__side--back > .o-list > li > a:link,
         .card__side--back > .o-list > li > a:visited {
           text-decoration: none;
-          color: #948D7F; }
+          color: #d5c89a; }
         .card__side--back > .o-list > li > a:hover,
         .card__side--back > .o-list > li > a:active {
           color: #d5c89a; }
@@ -510,13 +517,13 @@ HEADER ELEMENTS INSTRUCTIONS
         width: 80%;
         margin: -1rem auto 0;
         background-color: transparent;
-        color: #948D7F;
+        color: #fff7ed;
         cursor: pointer;
         font-weight: 300; }
         .card__side--back-btn :focus {
           outline: none; }
         .card__side--back-btn a:link {
-          color: #948D7F;
+          color: #d5c89a;
           text-decoration: none;
           font-family: 'Lato', 'Arial', san-serif;
           font-size: 2rem;
