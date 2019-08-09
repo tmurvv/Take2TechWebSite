@@ -12,11 +12,11 @@ HEADER ELEMENTS INSTRUCTIONS
         border-radius: .3rem;
 
         &--logo {
-            height: 10rem;
-            opacity: .2;
+            height: 6rem;
+            opacity: .5;
 
             @include respond(smallPhone) {
-                height: 6rem;
+                height: 4rem;
                 opacity: .1;
 
             }
@@ -38,7 +38,7 @@ HEADER ELEMENTS INSTRUCTIONS
 
             &>span {
                 //@include clipTextTertiaryRev;
-                color: $colorTertiary-dark;
+                color: $colorPrimary;
                 font-size: 85%;
                 font-weight: 500;
             }
@@ -51,7 +51,7 @@ HEADER ELEMENTS INSTRUCTIONS
             // -webkit-background-clip: text;
             // background-clip: text;
             // color: transparent;
-            color: $colorPrimary-dark;
+            color: $colorPrimary;
 
         }
     }
@@ -71,3 +71,46 @@ HEADER ELEMENTS INSTRUCTIONS
         cursor: pointer;
     }
 }
+.marquee-fixed {
+    overflow:auto;
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    color: $colorQuadary;
+    text-align: center;
+	border:1px solid #000;
+	padding:10px;
+    font-size:18px;
+    line-height:1.6;
+}
+.marquee-wrap {  //A PEN BY Paul O'Brien
+	overflow:auto;
+    height: 75px;
+    width: 300px;
+    position: absolute;
+    right: 5%;
+    top: 63%;
+    color: $colorQuadary;
+    text-align: center;
+	border:1px solid #000;
+	padding:10px;
+    font-size:18px;
+    line-height:1.6;
+}
+/* increase duration to speed up scroll */
+.marquee{animation:scrollUp 15s linear infinite;} //A PEN BY Paul O'Brien
+@supports (transform:translate3d(0px,0px,0px)){
+	.marquee-wrap {overflow:hidden; }
+	.marquee{padding-top:160px;}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.marquee-wrap {overflow:hidden; }/* ie11 hack */
+	.marquee{padding-top:160px;}
+}
+@keyframes scrollUp {
+	from {transform:translateY(0%);}
+	to {transform:translateY(-100%);}
+}
+.marquee:hover{animation-play-state:paused}

@@ -18,7 +18,7 @@ body {
     display: inline-block;
     //@include clipTextTertiary;
     //color: transparent;
-    color: $colorTertiary-dark;
+    color: $colorPrimary-light;
     letter-spacing: .2rem;
     transition: all .2s;
     @include respond(smallPhone) {
@@ -33,7 +33,7 @@ body {
 .o-headingSecondary {
     display: inline-block;
     //@include clipTextDark;
-    color: $colorTertiary-dark;
+    color: $colorSecondary;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -51,5 +51,5 @@ body {
 
 h4 {
     text-align: center;
-    color: $colorTertiary-dark;
+    color: $colorPrimaryHeader;
 }

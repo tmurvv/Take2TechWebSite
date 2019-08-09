@@ -32,7 +32,7 @@
 
         <div class="header__topLineWrapper">
             <div class="header__logoBox">
-                <img src="img/logotttsite.gif" alt="TechSchool Logo" class="header__logoBox--logo">
+                <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
             </div>
 
             <div class="nav">
@@ -80,9 +80,35 @@
             </div>
 
             <div class="header__heroBox--subTitle">
-                <h2 class="o-headingSecondary header__heroBox--subText">Calgary, Alberta, Canada</h2>
+                <h2 class="o-headingSecondary header__heroBox--subText">"Back of the Front End"</h2>
             </div>
         </div>
+        <div class="marquee-fixed">
+            <p>Javascript/ES6<br>
+                HTML/CSS<br>
+                PHP<br>                  
+                React<br>
+            </p>
+        </div>
+        <div class="marquee-wrap">
+            
+            <div class="marquee">
+                <p>Fully Responsive<br>
+                    Git version control<br>
+                    SQL<br>
+                    React-Hooks<br>
+                    React-Router<br>
+                    React-Material-ui<br>
+                    NPM<br>
+                    jQuery<br>
+                    Intersection Observer<br>
+                    Cloudinary CDN<br>
+                    BEM<br>                      
+                </p>
+            </div>
+        </div>
+
+
     </header>
     <section class="sectionProjects" id="projects">
 
