@@ -30,7 +30,7 @@
 }
 
 @mixin clipTextDark {
-    background-image: linear-gradient(to right, $colorPrimaryHeader, $colorPrimary-dark);
+    background-image: linear-gradient(to right, $colorPrimaryHeader 60%, $colorPrimary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

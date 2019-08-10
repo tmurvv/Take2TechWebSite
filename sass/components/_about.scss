@@ -6,7 +6,7 @@
         padding: 2rem;
         background-color: $colorWhite;
         border-radius: .3rem;
-        box-shadow: -8px -8px 20px $colorTertiary inset;
+        box-shadow: 10px 10px 20px $colorTertiary;
   
         @include respond(landscape) {
             width: 75%;

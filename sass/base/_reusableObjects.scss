@@ -9,7 +9,7 @@
 .o-list {
     list-style: none;
     text-decoration: none;
-    
+
 }
 
 .o-linkStyle-light {
@@ -46,4 +46,48 @@
     &:focus {
         outline: none;
     }
+}
+.o-centerHeading {
+    text-align: center;
+}
+
+.o-headingPrimary {
+    font-size: 4rem;
+    font-weight: 400;
+    display: inline-block;
+    color: $colorPrimary-light;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    @include respond(smallPhone) {
+        font-size: 2.5rem;
+    }
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
+    }
+}
+
+.o-headingSecondary {
+    display: inline-block;
+    @include clipTextDark;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    @include respond(smallPhone) {
+        font-size: 2.5rem;
+    }
+    &:hover {
+        transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
+    }
+}
+.o-headingSubSection {
+    text-align: center;
+    font-weight: 400;
+    background-image: linear-gradient(to left, $colorPaletteBlack, $colorPrimaryHeader, $colorPaletteBlack);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js\jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js\script.js"></script>
 
     <title>Tisha Murvihill, Web Developer</title>
@@ -109,12 +108,7 @@
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Portfolio</h2>
         </div>
-        <!-- <h4 class="sectionProjects--subText">All sites are
-            <a href="#mobileFriendly" class="js--openGlossary">mobile friendly</a> using current
-            <a href="#seo" class="js--openGlossary">search engine optimization</a> and
-            <a href="#performance" class="js--openGlossary">performance optimization</a> techniques.</h4> -->
-
-        <h4>Please note my speciality is functionality, not design.<br>I am open to new technologies/processes and I love to learn!!</h4>
+        <h4 class="o-headingSubSection">Please note my speciality is functionality, not design.<br>I am open to new technologies/processes and I love to learn!!</h4>
         <div class="cardWrapper">
             <div class="card">
                 <div class="card__side card__side--front js--popup1">
@@ -298,15 +292,15 @@
                         </li>
                     </ul>                    
                     <div class="card__side--back-btnContainer">
-                        <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
-                        <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
+                        <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
+                        <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
                     <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack4">&#8249;</button><br>
-
                 </div>
             </div>
         </div>
     </section>
+    
     <section class="sectionAbout" id="about">
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">About
@@ -315,9 +309,9 @@
         </h2>
         </div>
         <div class="sectionAbout__container">
-            <!-- .story-->
+            
             <figure class="sectionAbout__container--imgCont">
-                <!-- .story__shape-->
+                
                 <img src="img/ITHeadShotMoney.jpg" alt="Tisha Murvihill head shot" class="sectionAbout__content--imgCont-img">
             </figure>
             <div class="sectionAbout__container--content">

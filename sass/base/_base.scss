@@ -11,6 +11,20 @@ html {
     background-color: $colorOffwhite;   
 }
 
+body {
+    //typography
+    color: #555;
+    font-family: 'Lato', 'Arial', san-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    line-height: 1.7;
+}
+
+h4 {
+   
+}
+
 //BTW Media queries do not refer to the rem size we defined above.
 //We use ems in the mixin in order to get user changes in default settings into scope.  
 @include respond(landscape) {
@@ -26,9 +40,3 @@ html {
 @include respond(bigScreen) {
     font-size: 75%; // font = 12px; screen= 1800+px
 }
-
-//TO CHANGE HIGHLIGHT COLOUR
-// ::selection {
-//     background-color: $color-primary;
-//     color: $colorWhite;
-// }
