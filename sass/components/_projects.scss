@@ -53,12 +53,11 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; //May 9, 2018 removed card flipping ability due to UX
         padding: 2rem;
-        color: $colorWhite;
+        color: $colorPrimary;
         border-radius: 7px;
-        border: 1px transparent $colorWhite;
+        border: 1px transparent $colorPrimary;
         text-align: center;
         box-shadow: 5px 5px 20px -5px #868686;
-
         &--front {
             background-color: $colorPaletteBlack;
             color: $colorPrimary;

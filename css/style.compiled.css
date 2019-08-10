@@ -40,7 +40,7 @@ body {
   color: #fffbf7;
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 300;
   border: none; }
   .o-linkStyle-light:hover, .o-linkStyle-light:active {
@@ -53,7 +53,7 @@ body {
   color: #807363;
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   border: none; }
   .o-linkStyle-dark:hover, .o-linkStyle-dark:active {
@@ -351,7 +351,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%); } }
 
 .sectionProjects {
-  background-color: #fffbf7;
+  background-color: #ffffff;
   padding: 3rem;
   clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%); }
   @media only screen and (max-width: 37.5em) {
@@ -359,7 +359,7 @@ body {
       padding: 5rem 3rem 3rem; } }
 
 .sectionAbout {
-  background-color: #fffbf7;
+  background-color: #ffffff;
   width: 100%;
   clip-path: polygon(0 0, 100% 5%, 100% 120%, 0 120%);
   margin: -5rem auto 5rem;
@@ -422,9 +422,9 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     padding: 2rem;
-    color: #ffffff;
+    color: #d5c89a;
     border-radius: 7px;
-    border: 1px transparent #ffffff;
+    border: 1px transparent #d5c89a;
     text-align: center;
     box-shadow: 5px 5px 20px -5px #868686; }
     .card__side--front {

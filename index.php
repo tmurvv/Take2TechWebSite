@@ -124,9 +124,7 @@
                         <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
-
                 </div>
-
                 <div class="card__side card__side--back" id="popup1">
                     'Frecent' Shopping List
                     <br> Public-facing Subscription WebApp
