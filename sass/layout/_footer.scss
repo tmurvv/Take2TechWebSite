@@ -13,18 +13,28 @@
                     font-size: 60%;
                 }
                 &:link,
-                &:visited {
-                    color: $colorOffwhite;
+                &:visited {        
+                    color: $colorPrimary;
                     text-decoration: none;
-                    transition: all .4s;
+                    text-transform: uppercase;
+                    font-size: 80%;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom 0.4s;
+                    letter-spacing: 1.3px;
+                    word-spacing: 5px;
+                    font-weight: 400;
+                    padding-bottom: 1rem;
+                    // color: $colorOffWhite;
+                    // text-decoration: none;
+                    // transition: all .4s;
                     &:not(:last-child) {
                         margin-right: 4rem;
                     }
                 }
                 &:hover,
                 &:active {
-                    color: $colorWhite;
-                    text-decoration: underline;
+                    color: $colorPrimary-light;
+                    border-bottom: 2px solid $colorPrimary-light;
                 }
             }
         }
@@ -35,14 +45,13 @@
                 }
                 &:link,
                 &:visited {
-                    color: $colorOffwhite;
+                    color: $colorPrimary;
                     text-decoration: none;
                     transition: all .4s;
                 }
                 &:hover,
                 &:active {
-                    color: $colorWhite;
-                    text-decoration: underline;
+                    color: $colorPrimary-light;
                 }
                 &:not(:last-child) {
                     margin-right: 4rem;
@@ -58,6 +67,20 @@
             
                 &-web {
                     vertical-align: 10%;
+                    color: $colorPrimary;
+                    text-decoration: none;
+                    font-size: 80%;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom 0.4s;
+                    letter-spacing: 1.3px;
+                    word-spacing: 5px;
+                    font-weight: 400;
+                    padding-bottom: 1rem;
+                }
+                &:hover,
+                &:active {
+                    color: $colorPrimary-light;
+                    border-bottom: 2px solid $colorPrimary-light;
                 }
             }
         }

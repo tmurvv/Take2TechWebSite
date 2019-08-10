@@ -12,7 +12,7 @@
     }
 }
 .sectionProjects {
-    background-color: $colorOffwhite;
+    background-color: $colorOffWhite;
     padding: 3rem;
     clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%);
     @include respond(phone) {
@@ -20,7 +20,7 @@
     }
 }
 .sectionAbout {
-    background-color: $colorOffwhite;
+    background-color: $colorOffWhite;
     width: 100%;
     clip-path: polygon(0 0, 100% 5%, 100% 120%, 0 120%);
     margin: -5rem auto 5rem;

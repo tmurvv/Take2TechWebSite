@@ -1,9 +1,2 @@
 add beaucoup comments
-reorder styles when multiple used
-footer email underlined on hover
-glossary make sticky header appear less abruptly
-close glossary choice on sticky menu
-in objects file make linkStyle one class again and add color White and colorDark to utilities
-make logo the correct shade
-add shadow to mainTitle hover
-new favicon
+refactor JavaScript with mapping arrow function

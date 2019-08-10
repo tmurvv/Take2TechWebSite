@@ -112,14 +112,14 @@
                 border-radius: 7px;
                 color: $colorPrimary;
             }
-            &>button {
+            &>i {
                 opacity: 1;
                 visibility: visible;
                 color: $colorPrimary;
                 text-align: left;
                 width: 100%;
-                margin-top: -62px;
-                font-size: 66px;
+                margin-top: -16px;
+                font-size: 24px;
                 &:hover {
                     text-decoration: none;
                 }
@@ -134,16 +134,7 @@
                 font-weight: 300;
                 :focus {
                     outline: none;
-                }
-                & a:link {
-                    
-                    // text-decoration: none;
-                    // font-family: 'Lato', 'Arial', san-serif;
-                    // font-size: 2rem;
-                    // font-weight: 300;
-                    // position: absolute;
-                }
-                
+                }              
                 &Container {
                     margin-bottom: 2rem;
                     

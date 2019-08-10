@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
     <script type="text/javascript" src="js\script.js"></script>
 
     <title>Tisha Murvihill, Web Developer</title>
@@ -150,7 +151,7 @@
                         <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack1">&#8249;</button><br>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack1"></i>
 
                 </div>
             </div>
@@ -176,49 +177,44 @@
                         <br>Custom Client Backend</p>
                     <ul class="o-list">
                         <li>
-                            &#10003;&nbsp;&nbsp;php
+                            &#10003;&nbsp;&nbsp;PHP/PDO
                         </li>
                         <li>
                             &#10003;&nbsp;&nbsp;Git versioning</a>
                         </li>
                         <li>
-                            &#10003;&nbsp;&nbsp;BEM naming</a>
+                            &#10003;&nbsp;&nbsp;Search Function</a>
                         </li>
                         <li>
-                            &#10003;&nbsp;&nbsp;Sass</a>
+                            &#10003;&nbsp;&nbsp;SASS</a>
                         </li>
                         <li>
-                            &#10003;&nbsp;&nbsp;NPM build process</a>
+                            &#10003;&nbsp;&nbsp;NPM</a>
                         </li>
                         <li>
-                            &#10003;&nbsp;&nbsp;7-1 Architechture</a>
+                            &#10003;&nbsp;&nbsp;BEM</a>
                         </li>
                     </ul>
                     <div class="card__side--back-btnContainer">
                         <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack2">&#8249;</button><br>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack2"></i>
                 </div>
             </div>
-            
             <div class="card">
                 <div class="card__side card__side--front js--popup3">
-
                     <p>Tiffany Hansen, harpist</p>
                     <p class="card__side--front-subText">Static Brochure Website</p>
                     <div class="card__side--front-imgContainer2">
                         <img class="card__side--front-img" alt="take2tech.ca Landing Page" src="img/albertaHarpistScreenShot.jpg">
                     </div>
-
                     <div>
                         <button class="o-linkStyle-light js--cardFrontTechnical3">Technical Details</button><br>
                         <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="https://albertaharpist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
-
                 </div>
-
                 <div class="card__side card__side--back popup" id="popup3">
                     Tiffany Hansen, harpist
                     <br> Static Brochure Website
@@ -238,18 +234,15 @@
                         <li>
                             &#10003;&nbsp;&nbsp;Git versioning
                         </li>
-                        
                         <li>
                             &#10003;&nbsp;&nbsp;Cloudinary CDN
                         </li>
-                    </ul>
-                    
+                    </ul>      
                     <div class="card__side--back-btnContainer">
                         <a href="https://albertaharpist.com/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack3">&#8249;</button><br>
-
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack3"></i>
                 </div>
             </div>
             <div class="card">
@@ -295,7 +288,7 @@
                         <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <button type="button" class="o-linkStyle-light card__side--back-btn js--popBack4">&#8249;</button><br>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack4"></i>
                 </div>
             </div>
         </div>
