@@ -21,7 +21,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
-    <script type="text/javascript" src="js\script.js?v=1.03"></script>
+    <script type="text/javascript" src="js\script.js?v=1.04"></script>
 
     <title>Tisha Murvihill, Web Developer</title>
 
@@ -56,11 +56,8 @@
                     <i class="fas fa-window-close nav__mobileNav--icon-close"></i>
                     </a>
                 </div>
-
             </div>
-
         </div>
-
         <div class="header__heroBox">
             <div class="header__heroBox--mainHeading">
                 <h1 class="header__heroBox--mainHeading o-headingPrimary">
@@ -71,34 +68,36 @@
             </div>
 
             <div class="header__heroBox--subTitle">
-                <h2 class="o-headingSecondary header__heroBox--subText">"Back of the Front End"</h2>
+                <h2 class="header__heroBox--subText">"Back of the Front End"</h2>
             </div>
         </div>
-        <div class="marquee-fixed">
-            <p>Javascript/ES6<br>
-                HTML/CSS<br>
-                PHP<br>                  
-                React<br>
-            </p>
-        </div>
-        <div class="marquee-wrap">          
-            <div class="marquee">
-                <p>Fully Responsive<br>
-                    Git version control<br>
-                    React-Hooks<br>
-                    React-Router<br>
-                    React-Material-ui<br>
-                    JSS<br>
-                    NPM<br>
-                    SQL<br>
-                    BEM<br>
-                    jQuery<br>
-                    Cloudinary CDN<br> 
-                    Intersection Observer<br>                                                         
+        <div class="o-flex-col">
+            <div class="marquee-fixed">
+                <p>Javascript/ES6<br>
+                    HTML/CSS<br>
+                    PHP<br>                  
+                    React<br>
                 </p>
             </div>
+            <div class="marquee-wrap">          
+                <div class="marquee">
+                    <p>Fully Responsive<br>
+                        Git version control<br>
+                        React-Hooks<br>
+                        React-Router<br>
+                        React-Material-ui<br>
+                        JSS<br>
+                        NPM<br>
+                        SQL<br>
+                        BEM<br>
+                        jQuery<br>
+                        Cloudinary CDN<br> 
+                        Intersection Observer<br>                                                         
+                    </p>
+                </div>
+            </div>
         </div>
-    </header>
+            </header>
     <section class="sectionProjects" id="projects">
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Portfolio</h2>

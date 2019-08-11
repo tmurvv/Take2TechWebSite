@@ -17,6 +17,10 @@ body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     line-height: 1.7;
+    @include respond(portrait) {
+        line-height: 1.5;
+    }
+
 }
 
 //BTW Media queries do not refer to the rem size we defined above.

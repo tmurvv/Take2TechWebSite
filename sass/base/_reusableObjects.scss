@@ -29,7 +29,6 @@
         outline: none;
     }
 }
-
 .o-linkStyle-dark {
     background-color: transparent;   
     color: $colorTertiary-dark;
@@ -58,15 +57,19 @@
     color: $colorPrimary-light;
     letter-spacing: .2rem;
     transition: all .2s;
+    @include respond(portrait) {
+        font-size: 2.8rem;
+    }
     @include respond(smallPhone) {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        letter-spacing: .6rem;
+        line-height: 1.5;
     }
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
     }
 }
-
 .o-headingSecondary {
     display: inline-block;
     @include clipTextDark;
@@ -75,9 +78,14 @@
     font-weight: 700;
     letter-spacing: .2rem;
     transition: all .2s;
+    
     @include respond(smallPhone) {
-        font-size: 2.5rem;
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        line-height: unset;
+        text-transform: none;
     }
+    
     &:hover {
         transform: skewY(-2deg) skewX(-15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
@@ -90,4 +98,12 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+.o-flex-col {
+    display: flex;
+    flex-direction: column;
+    @include respond(phone) {
+        flex-direction: row;
+    }
+    justify-content: space-between;
 }
