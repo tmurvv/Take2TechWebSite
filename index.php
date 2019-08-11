@@ -21,7 +21,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
-    <script type="text/javascript" src="js\script.js?v=1.04"></script>
+    <script type="text/javascript" src="js\script.js?v=1.048"></script>
 
     <title>Tisha Murvihill, Web Developer</title>
 
@@ -105,7 +105,7 @@
         <h4 class="o-headingSubSection">Please note my speciality is functionality, not design,<br>I am open to new technologies/processes, and I love to learn!!</h4>
         <div class="cardWrapper">
             <div class="card">
-                <div class="card__side card__side--front js--popup1">
+                <div class="card__side card__side--front" id="js--popupcard1">
                     <p>'Frecent' Shopping List</p>
                     <p class='card__side--front-subText'>Public-facing Subscription WebApp</p>
                     <div class="card__side--front-imgContainer1">
@@ -113,12 +113,12 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical1">Technical Details</button><br>
+                        <button class="o-linkStyle-light js--cardFrontTechnical1 js--cardTechnical" id='card1'> Technical Details</button><br>
                         <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
                 </div>
-                <div class="card__side card__side--back" id="popup1">
+                <div class="card__side card__side--back" id="js--backcard1">
                     'Frecent' Shopping List
                     <br> Public-facing Subscription WebApp
                     <ul class="o-list">
@@ -142,14 +142,12 @@
                         <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack1"></i>
-                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack1"></i>
-
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card1"></i>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card__side card__side--front js--popup2">
+                <div class="card__side card__side--front js--popupcard2" id="js--popupcard2">
 
                     <p>Innovation College JobBoard</p>
                     <p class='card__side--front-subText'>Custom Client Backend</p>
@@ -158,13 +156,13 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical2">Technical Details</button><br>
+                        <button class="o-linkStyle-light js--cardFrontTechnical2 js--cardTechnical" id='card2'>Technical Details</button><br>
                         <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
-                <div class="card__side card__side--back popup" id="popup2">
+                <div class="card__side card__side--back popup" id="js--backcard2">
                     <p>JobBoard
                         <br>Custom Client Backend</p>
                     <ul class="o-list">
@@ -191,23 +189,23 @@
                         <a href="https://www.take2tech.ca/TTT/JobBoard/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://github.com/tmurvv/TTTJobBoard" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack2"></i>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card2"></i>
                 </div>
             </div>
             <div class="card">
-                <div class="card__side card__side--front js--popup3">
+                <div class="card__side card__side--front js--popup3" id="js--popupcard3">
                     <p>Tiffany Hansen, harpist</p>
                     <p class="card__side--front-subText">Static Brochure Website</p>
                     <div class="card__side--front-imgContainer2">
                         <img class="card__side--front-img" alt="take2tech.ca Landing Page" src="img/albertaHarpistScreenShot.jpg">
                     </div>
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical3">Technical Details</button><br>
+                        <button class="o-linkStyle-light js--cardTechnical" id='card3'>Technical Details</button><br>
                         <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="https://albertaharpist.com" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
                 </div>
-                <div class="card__side card__side--back popup" id="popup3">
+                <div class="card__side card__side--back popup" id="js--backcard3">
                     Tiffany Hansen, harpist
                     <br> Static Brochure Website
                     <ul class="o-list">
@@ -234,11 +232,11 @@
                         <a href="https://albertaharpist.com/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://bitbucket.org/tmurvvvv/tiffhansen/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack3"></i>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card3"></i>
                 </div>
             </div>
             <div class="card">
-                <div class="card__side card__side--front js--popup4">
+                <div class="card__side card__side--front js--popup4" id="js--popupcard4">
 
                     <p>Fun Facts Train Game</p>
                     <p class="card__side--front-subText">React App</p>
@@ -247,13 +245,13 @@
                     </div>
 
                     <div>
-                        <button class="o-linkStyle-light js--cardFrontTechnical4">Technical Details</button><br>
+                        <button class="o-linkStyle-light js--cardTechnical" id='card4'>Technical Details</button><br>
                         <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light">View Code (GitHub)</a><br>
                         <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light">Visit Site</a>                    
                     </div>
 
                 </div>
-                <div class="card__side card__side--back popup" id="popup4">
+                <div class="card__side card__side--back popup" id="js--backcard4">
                     Fun Facts Train Game
                     <br> React App
                     <ul class="o-list">
@@ -280,7 +278,7 @@
                         <a href="http://funfactstrains.take2tech.ca" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://bitbucket.org/tmurvvvv/funfacttraingame/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
-                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack4"></i>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card4"></i>
                 </div>
             </div>
         </div>
@@ -334,6 +332,41 @@
 
         </div>
     </footer>
+    <script>
+        function cardClick(e) {
+            const card = e.target.id;
+            const popup = document.querySelector(`#js--popup${card}`);
+            const backCard = document.querySelector(`#js--back${card}`);
+            popup.style.transform = 'rotatey(-180deg)';
+            backCard.style.tranform = 'rotatey(0)';
+            backCard.style.opacity = 1;
+            backCard.style.visibility = 1;              
+        }
+        function popCardBack(e) {
+            const card = e.target.id;
+            const popup = document.querySelector(`#js--popup${card}`);
+            const backCard = document.querySelector(`#js--back${card}`);
+            popup.style.transform = 'rotatey(0)';
+            backCard.style.tranform = 'rotatey(-180deg)';
+            backCard.style.opacity = 0;
+            backCard.style.visibility = 0; 
+    //     $("#popup2").css("transform", "rotatey(-180)");
+    //     $("#popup2").css("opacity", "0");
+    //     $("#popup2").css("visibility", "0");              
+        }
+        // self executing function here
+        (function() {
+            const cardTechnicalArray = Array.from(document.querySelectorAll('.js--cardTechnical'));
+            cardTechnicalArray.map(card => {
+                card.addEventListener('click', cardClick);
+            });
+            const popCardBackArray = Array.from(document.querySelectorAll('.js--popCardBack'));
+            popCardBackArray.map(card => {
+                card.addEventListener('click', popCardBack);
+            });
+
+        })();
+    </script>
 </body>
 
 </html>

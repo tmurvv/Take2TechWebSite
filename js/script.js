@@ -36,7 +36,6 @@ $(window).resize(checkWidth);
                 close.css("display", "none");              
             }
         } else {
-            console.log('inelse', windowSize)
             hamburger.css("display", "block");
             close.css("display", "none");
             mainNav.css('visibility', 'hidden');
@@ -66,73 +65,5 @@ $(window).resize(checkWidth);
             hamburger.css("display", "none");
             close.css("display", "block");
         }
-    });
-
-    //Projects page--Show technical deets popups for touch screens
-    //Card1
-    $(".js--cardFrontTechnical1").click(function () {
-        $(".js--popup1").css("transform", "rotatey(-180deg)");
-        $("#popup1").css("transform", "rotatey(0)");
-        $("#popup1").css("opacity", "1");
-        $("#popup1").css("visibility", "1");                
-    });
-    $(".js--popBack1").click(function () {         
-       $(".js--popup1").css("transform", "rotatey(0)");
-        $("#popup1").css("transform", "rotatey(-180)");
-        $("#popup1").css("opacity", "0");
-        $("#popup1").css("visibility", "0");         
-    });
-    //Card2
-    $(".js--cardFrontTechnical2").click(function () {
-        $(".js--popup2").css("transform", "rotatey(-180deg)");
-        $("#popup2").css("transform", "rotatey(0)");
-        $("#popup2").css("opacity", "1");
-        $("#popup2").css("visibility", "1");  
-    });
-    $(".js--popBack2").click(function () {
-        $(".js--popup2").css("transform", "rotatey(0)");
-        $("#popup2").css("transform", "rotatey(-180)");
-        $("#popup2").css("opacity", "0");
-        $("#popup2").css("visibility", "0"); 
-    });
-    //Card3
-    $(".js--cardFrontTechnical3").click(function () {
-        $(".js--popup3").css("transform", "rotatey(-180deg)");
-        $("#popup3").css("transform", "rotatey(0)");
-        $("#popup3").css("opacity", "1");
-        $("#popup3").css("visibility", "1");  
-    });
-    $(".js--popBack3").click(function () {
-        $(".js--popup3").css("transform", "rotatey(0)");
-        $("#popup3").css("transform", "rotatey(-180)");
-        $("#popup3").css("opacity", "0");
-        $("#popup3").css("visibility", "0"); 
-    });
-    //Card4
-    $(".js--cardFrontTechnical4").click(function () {
-        $(".js--popup4").css("transform", "rotatey(-180deg)");
-        $("#popup4").css("transform", "rotatey(0)");
-        $("#popup4").css("opacity", "1");
-        $("#popup4").css("visibility", "1");  
-    });
-    $(".js--popBack4").click(function () {
-        $(".js--popup4").css("transform", "rotatey(0)");
-        $("#popup4").css("transform", "rotatey(-180)");
-        $("#popup4").css("opacity", "0");
-        $("#popup4").css("visibility", "0"); 
-    });
-    //Card5
-    $(".js--cardFrontTechnical5").click(function () {
-        $(".js--popup5").css("transform", "rotatey(-180deg)");
-        $("#popup5").css("transform", "rotatey(0)");
-        $("#popup5").css("opacity", "1");
-        $("#popup5").css("visibility", "1");  
-    });
-    $(".js--popBack5").click(function () {
-        $(".js--popup5").css("transform", "rotatey(0)");
-        $("#popup5").css("transform", "rotatey(-180)");
-        $("#popup5").css("opacity", "0");
-        $("#popup5").css("visibility", "0"); 
-    });   
+    });  
 });
-
