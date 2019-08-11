@@ -53,11 +53,12 @@
         }       
         &-hamburger {
             height: 3rem;
+            color: $colorPrimary;
         }
         &-close {
-            display: none;
             height: 2rem;
             border-radius: .3rem;
+            color: $colorPrimary;
         }
     }
 }

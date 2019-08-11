@@ -21,7 +21,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
-    <script type="text/javascript" src="js\script.js"></script>
+    <script type="text/javascript" src="js\script.js?v=1.03"></script>
 
     <title>Tisha Murvihill, Web Developer</title>
 
@@ -34,7 +34,6 @@
             <div class="header__logoBox">
                 <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
             </div>
-
             <div class="nav">
                 <ul class="nav__mainNav js--main-nav">
                     <li class="nav__mainNav--Item">
@@ -42,23 +41,19 @@
                             <a href="#projects">View portfolio</a>
                         </span>
                     </li>
-
                     <li class="nav__mainNav--Item">
                         <a href="#about">About</a>
                     </li>
-
                     <li class="nav__mainNav--Item">
                         <a href="contact.php">Contact</a>
                     </li>
-
                 </ul>
-
                 <div class="nav__mobileNav" id="js--nav__mobileNav">
                     <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
-                        <img src="img/hamburger.png" alt="menu icon" class="nav__mobileNav--icon-hamburger">
+                        <i class="fas fa-bars nav__mobileNav--icon-hamburger"></i>
                     </a>
                     <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
-                        <img src="img/Close.png" alt="menu icon" class="nav__mobileNav--icon-close">
+                    <i class="fas fa-window-close nav__mobileNav--icon-close"></i>
                     </a>
                 </div>
 
@@ -105,11 +100,10 @@
         </div>
     </header>
     <section class="sectionProjects" id="projects">
-
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Portfolio</h2>
         </div>
-        <h4 class="o-headingSubSection">Please note my speciality is functionality, not design.<br>I am open to new technologies/processes and I love to learn!!</h4>
+        <h4 class="o-headingSubSection">Please note my speciality is functionality, not design,<br>I am open to new technologies/processes, and I love to learn!!</h4>
         <div class="cardWrapper">
             <div class="card">
                 <div class="card__side card__side--front js--popup1">
@@ -149,6 +143,7 @@
                         <a href="https://bitbucket.org/tmurvvvv/frecentlistmaker/src/master/" target="_blank" class="o-linkStyle-light card__side--back-btn">Visit Site</a><br>
                         <a href="https://frecentlist.com" target="_blank" class="o-linkStyle-light card__side--back-btn">View Code (GitHub)</a>                 
                     </div>
+                    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack1"></i>
                     <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popBack1"></i>
 
                 </div>

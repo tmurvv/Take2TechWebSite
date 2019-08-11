@@ -240,6 +240,9 @@ body {
   padding: 10px;
   font-size: 18px;
   line-height: 1.6; }
+  @media only screen and (max-width: 56.25em) {
+    .marquee-fixed {
+      text-align: right; } }
 
 .marquee-wrap {
   overflow: auto;
@@ -254,6 +257,9 @@ body {
   padding: 10px;
   font-size: 18px;
   line-height: 1.6; }
+  @media only screen and (max-width: 56.25em) {
+    .marquee-wrap {
+      text-align: right; } }
 
 /* change duration to change scroll speed */
 .marquee {
@@ -331,11 +337,12 @@ body {
       .nav__mobileNav--icon {
         display: block; } }
     .nav__mobileNav--icon-hamburger {
-      height: 3rem; }
+      height: 3rem;
+      color: #d5c89a; }
     .nav__mobileNav--icon-close {
-      display: none;
       height: 2rem;
-      border-radius: .3rem; }
+      border-radius: .3rem;
+      color: #d5c89a; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/glassBreaks1LoopA.gif);
