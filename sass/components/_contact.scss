@@ -1,9 +1,11 @@
 .contact {
-    
+    height: 100vh;
+    width: 100%;
+    background-color: white;
     &__image {
         position: relative;
-        height: 576px;
-        width: 794px;
+        height: 100%;
+        width: 100%;
         display: block;
         margin: 0 auto;
 
@@ -18,8 +20,6 @@
             background-image: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/lightglassburstmytint.gif);   
             background-size: cover;           
         }
-        
-
         &>img {
            height: 100%;
            width: 100%; 
@@ -35,30 +35,25 @@
         font-size: 20px;
         font-family: 'Josefin Slab', serif;
         color: darkslategrey;
-        @include respond(portrait900) {
-            top: 13%;
-            left: 10%;
-            width: 40%;
-        }
-        @include respond(phone) {
-            position: static;
-            margin: auto;
-            padding-top: 50px;
-            width: 267px;
-        }
+        // @include respond(portrait900) {
+        //     top: 13%;
+        //     left: 10%;
+        //     width: 40%;
+        // }
+        // @include respond(phone) {
+        //     position: static;
+        //     margin: auto;
+        //     padding-top: 50px;
+        //     width: 267px;
+        // }
     }
     &__form {
-        position: absolute;
-        bottom: 75px;
-        right: 25px;
-        width: fit-content;
-        height: fit-content;
+        @include centerBoxAbs;
         border: 1px solid #333333;
         border-radius: 7px;
 
-        @include respond(phone) {
-            position: static;
-            margin: 50px auto;
+        @include respond(smallPhone) {
+            width:100%;
         }
 
         &--title {
@@ -72,6 +67,7 @@
             padding-bottom: 20px;
             line-height: 2;
             background-color: transparent;
+            overflow: hidden;
 
             & div {
                 width: 100%;

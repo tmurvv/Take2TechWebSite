@@ -11,6 +11,9 @@
         @include respond(landscape) {
             width: 75%;
         }
+        @include respond(smallPhone) {
+            width: 100%;
+        }
     
         &--imgCont {
             height: 15rem;

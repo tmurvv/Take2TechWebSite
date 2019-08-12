@@ -37,6 +37,9 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="nav__mainNav--Item">
+                        <a href="resume.php">Resume</a>
+                    </li>
+                    <li class="nav__mainNav--Item">
                         <a href="contact.php">Contact</a>
                     </li>
                 </ul>

@@ -1,6 +1,7 @@
-//JavaScript file
 "use strict";
-// Menu State helper functions
+/*******************
+*Menu State helper functions
+********************/
 function setMenuState() {
     const windowSize = window.innerWidth;
     const mainNav = document.querySelector("#js--main-nav");
@@ -21,8 +22,8 @@ function toggleMobileMenu() {
     const windowSize = window.innerWidth;
     const mainNav = document.querySelector("#js--main-nav");
     const hamburger = document.querySelector("#js--hamburgerIcon");
-    const close = document.querySelector("#js--menuCloseIcon");
-    //if window was resized to >= 900, show menu and return
+    const close = document.querySelector("#js--menuCloseIcon");    
+    //if window width >= 900, show menu and return
     if (windowSize >= 900) {
         mainNav.style.display='block'; 
         hamburger.style.display = 'none';
@@ -41,7 +42,10 @@ function toggleMobileMenu() {
         close.style.display='block'; 
     }
 }
-//portfolio flip cards helper functions
+/*******************
+* portfolio flip cards helper functions
+*******************/
+//flip to back side of portfolio card
 function cardClick(e) {
     const card = e.target.id;
     const popup = document.querySelector(`#js--popup${card}`);
@@ -51,6 +55,7 @@ function cardClick(e) {
     backCard.style.opacity = 1;
     backCard.style.visibility = 1;              
 }
+//flip to front side of portfolio card
 function popCardBack(e) {
     const card = e.target.id;
     const popup = document.querySelector(`#js--popup${card}`);

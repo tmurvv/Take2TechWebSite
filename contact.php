@@ -57,8 +57,7 @@
                 $result = 'reCaptcha failed. Please try again.';
             }      
         }
-    }
-   
+    }  
     $_POST = [];
 ?>
 <!DOCTYPE html>
@@ -74,13 +73,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>take2tech.ca-Contact</title>
-
+    <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
+    <script type="text/javascript" src="js\script.js?v=1.051"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LdGRpIUAAAAAKZHdmdKI6DuKia0NLVLmiWB1zfh"></script>
     <script>
         grecaptcha.ready(function() {
             grecaptcha.execute('6LdGRpIUAAAAAKZHdmdKI6DuKia0NLVLmiWB1zfh', {action: 'homepage'}).then(function(token) {
                 // pass the token to the backend script for verification
-
                  // add token value to form for PHP verification
                 document.getElementById('g-recaptcha-response').value = token;
             });
@@ -88,17 +87,47 @@
     </script>
 </head>
 <body>
+    <header class="header" style="clip-path: none; height: 125px">
+        <div class="header__topLineWrapper">
+            <div class="header__logoBox">
+                <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
+            </div>
+            <div class="nav">
+                <ul class="nav__mainNav js--main-nav" id='js--main-nav'>
+                    <li class="nav__mainNav--Item">
+                        <span>
+                            <a href="https://take2tech.ca#projects">View portfolio</a>
+                        </span>
+                    </li>
+                    <li class="nav__mainNav--Item">
+                        <a href="https://take2tech.ca#about">About</a>
+                    </li>
+                    <li class="nav__mainNav--Item">
+                        <a href="https://take2tech.ca/resume.php">Resume</a>
+                    </li>
+                    <li class="nav__mainNav--Item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__mobileNav" id="js--nav__mobileNav">
+                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
+                        <i class="fas fa-bars nav__mobileNav--icon-hamburger" id="js--hamburgerIcon"></i>
+                    </a>
+                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
+                    <i class="fas fa-window-close nav__mobileNav--icon-close" id="js--menuCloseIcon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>       
+    </header>
     <div class="contact">
         <div class="contact__image">
-            <img class="hardImage" src="img/lightglassburstmytint.gif" alt="Artiscally presented exploding glass.">
-            <div class="contact__text">
-                <p>take2tech.ca provides reasonably priced web development. All sites are custom-coded meeting or exceeding industry standards in usability, SEO, security, and performance.</p>
-            </div>                    
+            <img class="hardImage" src="img/lightglassburstmytint.gif" alt="Artiscally presented exploding glass.">                   
             <div class="contact__form">
                 <form action="contact.php" name='submit' method="post" id='recaptchaForm'>
                     
                     <div class="contact__form--title">
-                        <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact Us</p>';} ?> 
+                        <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact</p>';} ?> 
                     </div>
                     
                     <div class="contact__form--userInputs">
@@ -124,5 +153,19 @@
             </div>
         </div>           
     </div>
+    <script>       
+        // set state onload
+        (function() {
+            //Set initial menu state
+            setMenuState();
+
+            //add event listeners -- navigation
+            window.addEventListener('resize', setMenuState);
+            const hamburgerIcon = document.querySelector('#js--hamburgerIcon');
+            hamburgerIcon.addEventListener('click', toggleMobileMenu);
+            const menuCloseIcon = document.querySelector('#js--menuCloseIcon');
+            menuCloseIcon.addEventListener('click', toggleMobileMenu);
+        })();
+    </script>
 </body>
 </html>

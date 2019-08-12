@@ -12,8 +12,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 @mixin clipTextLight {
     display: inline-block;
     background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
@@ -28,7 +26,6 @@
     background-clip: text;
     color: transparent;
 }
-
 @mixin clipTextDark {
     background-image: linear-gradient(to right, $colorPrimaryHeader 60%, $colorPrimary-dark);
     -webkit-background-clip: text;

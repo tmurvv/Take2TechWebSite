@@ -78,7 +78,7 @@
     transition: all .2s;
     
     @include respond(smallPhone) {
-        font-size: 1.3rem;
+        font-size: 3rem;
         letter-spacing: .2rem;
         line-height: unset;
         text-transform: none;
