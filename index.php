@@ -11,31 +11,24 @@
         gtag('js', new Date());
         gtag('config', 'UA-132960985-1');
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
-    <script type="text/javascript" src="js\script.js?v=1.048"></script>
-
+    <script type="text/javascript" src="js\script.js?v=1.050"></script>
     <title>Tisha Murvihill, Web Developer</title>
-
 </head>
-
 <body>
     <header class="header">
-
         <div class="header__topLineWrapper">
             <div class="header__logoBox">
                 <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
             </div>
             <div class="nav">
-                <ul class="nav__mainNav js--main-nav">
+                <ul class="nav__mainNav js--main-nav" id='js--main-nav'>
                     <li class="nav__mainNav--Item">
                         <span>
                             <a href="#projects">View portfolio</a>
@@ -50,10 +43,10 @@
                 </ul>
                 <div class="nav__mobileNav" id="js--nav__mobileNav">
                     <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
-                        <i class="fas fa-bars nav__mobileNav--icon-hamburger"></i>
+                        <i class="fas fa-bars nav__mobileNav--icon-hamburger" id="js--hamburgerIcon"></i>
                     </a>
                     <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
-                    <i class="fas fa-window-close nav__mobileNav--icon-close"></i>
+                    <i class="fas fa-window-close nav__mobileNav--icon-close" id="js--menuCloseIcon"></i>
                     </a>
                 </div>
             </div>
@@ -333,6 +326,48 @@
         </div>
     </footer>
     <script>
+        // Menu State helper functions
+        function setMenuState() {
+            const windowSize = window.innerWidth;
+            const mainNav = document.querySelector("#js--main-nav");
+            const hamburger = document.querySelector("#js--hamburgerIcon");
+            const close = document.querySelector("#js--menuCloseIcon");
+            if (windowSize >= 900) {
+                mainNav.style.display='block'; 
+                hamburger.style.display = 'none';
+                close.style.display='none';              
+                
+            } else {
+                mainNav.style.display='none'; 
+                hamburger.style.display = 'block';
+                close.style.display='none'; 
+            }
+        }
+        function toggleMobileMenu() {
+            const windowSize = window.innerWidth;
+            const mainNav = document.querySelector("#js--main-nav");
+            const hamburger = document.querySelector("#js--hamburgerIcon");
+            const close = document.querySelector("#js--menuCloseIcon");
+            //if window was resized to >= 900, show menu and return
+            if (windowSize >= 900) {
+                mainNav.style.display='block'; 
+                hamburger.style.display = 'none';
+                close.style.display='none';              
+                return;
+            }
+            //if closed icon showing, close menu
+            if (close.style.display === 'block') {
+                mainNav.style.display='none'; 
+                hamburger.style.display = 'block';
+                close.style.display='none';
+            //if no close icon, show menu
+            } else {
+                mainNav.style.display='block'; 
+                hamburger.style.display = 'none';
+                close.style.display='block'; 
+            }
+        }
+        //portfolio flip cards helper functions
         function cardClick(e) {
             const card = e.target.id;
             const popup = document.querySelector(`#js--popup${card}`);
@@ -349,13 +384,21 @@
             popup.style.transform = 'rotatey(0)';
             backCard.style.tranform = 'rotatey(-180deg)';
             backCard.style.opacity = 0;
-            backCard.style.visibility = 0; 
-    //     $("#popup2").css("transform", "rotatey(-180)");
-    //     $("#popup2").css("opacity", "0");
-    //     $("#popup2").css("visibility", "0");              
+            backCard.style.visibility = 0;        
         }
-        // self executing function here
+        // set state onload
         (function() {
+            //Set initial menu state
+            setMenuState();
+
+            //add event listeners -- navigation
+            window.addEventListener('resize', setMenuState);
+            const hamburgerIcon = document.querySelector('#js--hamburgerIcon');
+            hamburgerIcon.addEventListener('click', toggleMobileMenu);
+            const menuCloseIcon = document.querySelector('#js--menuCloseIcon');
+            menuCloseIcon.addEventListener('click', toggleMobileMenu);
+            
+            //add event listeners -- flip portfolio cards
             const cardTechnicalArray = Array.from(document.querySelectorAll('.js--cardTechnical'));
             cardTechnicalArray.map(card => {
                 card.addEventListener('click', cardClick);
@@ -364,9 +407,7 @@
             popCardBackArray.map(card => {
                 card.addEventListener('click', popCardBack);
             });
-
         })();
     </script>
 </body>
-
 </html>
