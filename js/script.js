@@ -1,24 +1,62 @@
 //JavaScript file
 "use strict";
-$(document).ready(function () {
-    //Header page--Show_Hide mainNav menu                                     
-    // $(".js--nav__mobileNav--icon").click(function () {
-    //     var mainNav = $(".js--main-nav");
-    //     var hamburger = $(".nav__mobileNav--icon-hamburger");
-    //     var hamburgerVis = $(".nav__mobileNav--icon-hamburger:visible");
-    //     var close = $(".nav__mobileNav--icon-close");
-    //     mainNav.slideToggle(200, function() {
-    //         if (mainNav.is(":hidden")) {
-    //             mainNav.removeAttr("style");               
-    //         }
-    //     });
-    //     if ((hamburgerVis).length == 0) {
-    //         hamburger.css("display", "block");
-    //         close.css("display", "none");
-    //     }
-    //     else {
-    //         hamburger.css("display", "none");
-    //         close.css("display", "block");
-    //     }
-    // });  
-});
+// Menu State helper functions
+function setMenuState() {
+    const windowSize = window.innerWidth;
+    const mainNav = document.querySelector("#js--main-nav");
+    const hamburger = document.querySelector("#js--hamburgerIcon");
+    const close = document.querySelector("#js--menuCloseIcon");
+    if (windowSize >= 900) {
+        mainNav.style.display='block'; 
+        hamburger.style.display = 'none';
+        close.style.display='none';              
+        
+    } else {
+        mainNav.style.display='none'; 
+        hamburger.style.display = 'block';
+        close.style.display='none'; 
+    }
+}
+function toggleMobileMenu() {
+    const windowSize = window.innerWidth;
+    const mainNav = document.querySelector("#js--main-nav");
+    const hamburger = document.querySelector("#js--hamburgerIcon");
+    const close = document.querySelector("#js--menuCloseIcon");
+    //if window was resized to >= 900, show menu and return
+    if (windowSize >= 900) {
+        mainNav.style.display='block'; 
+        hamburger.style.display = 'none';
+        close.style.display='none';              
+        return;
+    }
+    //if closed icon showing, close menu
+    if (close.style.display === 'block') {
+        mainNav.style.display='none'; 
+        hamburger.style.display = 'block';
+        close.style.display='none';
+    //if no close icon, show menu
+    } else {
+        mainNav.style.display='block'; 
+        hamburger.style.display = 'none';
+        close.style.display='block'; 
+    }
+}
+//portfolio flip cards helper functions
+function cardClick(e) {
+    const card = e.target.id;
+    const popup = document.querySelector(`#js--popup${card}`);
+    const backCard = document.querySelector(`#js--back${card}`);
+    popup.style.transform = 'rotatey(-180deg)';
+    backCard.style.tranform = 'rotatey(0)';
+    backCard.style.opacity = 1;
+    backCard.style.visibility = 1;              
+}
+function popCardBack(e) {
+    const card = e.target.id;
+    const popup = document.querySelector(`#js--popup${card}`);
+    const backCard = document.querySelector(`#js--back${card}`);
+    popup.style.transform = 'rotatey(0)';
+    backCard.style.tranform = 'rotatey(-180deg)';
+    backCard.style.opacity = 0;
+    backCard.style.visibility = 0;        
+}

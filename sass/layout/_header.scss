@@ -29,7 +29,7 @@
         //see o-headingPrimary in _reusables for other settings   
         &--mainHeading {
             letter-spacing: .8rem;
-            font-weight: 600;
+            font-weight: 400;
             &:focus {
                 outline:none;
             }
@@ -44,11 +44,16 @@
             font-size: 75%;
             color: $colorPrimary;
             display: inline-block;
-            @include clipTextDark;
-            font-size: 3.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
             letter-spacing: .2rem;
             transition: all .2s;          
+            @include respond(portrait) {
+                font-size: 1.8rem;
+                // letter-spacing: .2rem;
+                // line-height: unset;
+                text-transform: none;
+            }           
             @include respond(smallPhone) {
                 font-size: 1.3rem;
                 letter-spacing: .2rem;
@@ -100,6 +105,7 @@
     @include respond(smallPhone) {
         top: 47%;
         right: 0;
+        width: 100%;
         font-size: 14px;
     }
 }
@@ -129,6 +135,7 @@
         height: 30px;
         right: 0;
         top: 82%;
+        width: 100%;
         font-size: 14px;
     }
     

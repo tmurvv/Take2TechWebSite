@@ -238,14 +238,14 @@ body {
       font-size: 75%;
       color: #d5c89a;
       display: inline-block;
-      background-image: linear-gradient(to right, #b8a668 60%, #72695A);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-size: 3.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
       letter-spacing: .2rem;
       transition: all .2s; }
+      @media only screen and (max-width: 56.25em) {
+        .header__heroBox--subText {
+          font-size: 1.8rem;
+          text-transform: none; } }
       @media only screen and (max-width: 28em) {
         .header__heroBox--subText {
           font-size: 1.3rem;
@@ -293,6 +293,7 @@ body {
     .marquee-fixed {
       top: 47%;
       right: 0;
+      width: 100%;
       font-size: 14px; } }
 
 .marquee-wrap {
@@ -322,6 +323,7 @@ body {
       height: 30px;
       right: 0;
       top: 82%;
+      width: 100%;
       font-size: 14px; } }
 
 /* change duration to change scroll speed */
