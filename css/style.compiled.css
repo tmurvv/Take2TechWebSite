@@ -530,12 +530,9 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      transform: rotateY(180deg);
+      transform: none;
       z-index: -1;
       color: #ffffff; }
-      @media only screen and (max-width: 75em) {
-        .card__side--back {
-          transform: none; } }
       .card__side--back > .o-list {
         margin: .5rem 2rem 1.5rem;
         text-decoration: none;

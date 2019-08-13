@@ -95,12 +95,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            transform: rotateY(180deg); //May 9, 2018 removed card flipping ability due to UX
-
+            transform: none;
             z-index: -1;
-            @include respond(landscape) {
-                transform: none;
-            }
             color: $colorWhite;
             &>.o-list {
                 margin: .5rem 2rem 1.5rem;
