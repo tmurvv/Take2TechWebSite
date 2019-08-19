@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=.085">
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
     <script type="text/javascript" src="js\script.js?v=1.051"></script>
     <title>Tisha Murvihill, Web Developer</title>
@@ -23,11 +23,14 @@
 <body>
     <header class="header">
         <div class="header__topLineWrapper">
-            <div class="header__logoBox">
+            <a href='https://take2tech.ca' class="header__logoBox">
                 <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
-            </div>
+            </a>
             <div class="nav">
                 <ul class="nav__mainNav js--main-nav" id='js--main-nav'>
+                    <li class="nav__mainNav--Item">
+                            <a href="https://take2tech.ca">Home</a>
+                    </li>
                     <li class="nav__mainNav--Item">
                         <span>
                             <a href="#projects">View portfolio</a>
@@ -87,7 +90,8 @@
                         BEM<br>
                         jQuery<br>
                         Cloudinary CDN<br> 
-                        Intersection Observer<br>                                                         
+                        Intersection Observer<br>
+                        and more...<br>                                                         
                     </p>
                 </div>
             </div>
@@ -97,7 +101,7 @@
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Portfolio</h2>
         </div>
-        <h4 class="o-headingSubSection">Please note my speciality is functionality, not design,<br>I am open to new technologies/processes, and I love to learn!!</h4>
+        <h4 class="o-headingSubSection">Please note my speciality is implementation, not design, I am open to new technologies/processes, and I love to learn!!</h4>
         <div class="cardWrapper">
             <div class="card">
                 <div class="card__side card__side--front" id="js--popupcard1">
@@ -308,7 +312,9 @@
             <div class="footer__menuContainer--menu">
                 <a href="#top" class="footer__menuContainer--menu-item">Home</a>
                 <a href="#projects" class="footer__menuContainer--menu-item">Portfolio</a>
+                <a href="https://take2tech.ca/resume" class="footer__menuContainer--menu-item">Resume</a>
                 <a href="#about" class="footer__menuContainer--menu-item">About</a>
+                <a href="https://take2tech.ca/contact" class="footer__menuContainer--menu-item">Contact</a>
             </div>
 
             <div class="footer__menuContainer--social">

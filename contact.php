@@ -70,7 +70,7 @@
     <link href="https://fonts.googleapis.com/css?family=Tangerine:100,300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:100,300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=.083">
 
     <title>take2tech.ca-Contact</title>
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
@@ -87,13 +87,16 @@
     </script>
 </head>
 <body>
-    <header class="header" style="clip-path: none; height: 125px">
+    <header class="header" style="clip-path: none; height: 140px">
         <div class="header__topLineWrapper">
-            <div class="header__logoBox">
+            <a href='https://take2tech.ca' class="header__logoBox">
                 <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
-            </div>
+            </a>
             <div class="nav">
                 <ul class="nav__mainNav js--main-nav" id='js--main-nav'>
+                    <li class="nav__mainNav--Item">
+                            <a href="https://take2tech.ca">Home</a>
+                    </li>    
                     <li class="nav__mainNav--Item">
                         <span>
                             <a href="https://take2tech.ca#projects">View portfolio</a>
@@ -122,12 +125,11 @@
     </header>
     <div class="contact">
         <div class="contact__image">
-            <img class="hardImage" src="img/lightglassburstmytint.gif" alt="Artiscally presented exploding glass.">                   
             <div class="contact__form">
                 <form action="contact.php" name='submit' method="post" id='recaptchaForm'>
                     
                     <div class="contact__form--title">
-                        <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact</p>';} ?> 
+                        <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact Tisha Murvihill</p>';} ?> 
                     </div>
                     
                     <div class="contact__form--userInputs">

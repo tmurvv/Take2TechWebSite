@@ -16,11 +16,14 @@
 <body>
     <header class="header" style="clip-path: none; height: 125px">
         <div class="header__topLineWrapper">
-            <div class="header__logoBox">
+            <a href="https://take2tech.ca" class="header__logoBox">
                 <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
-            </div>
+            </a>
             <div class="nav">
                 <ul class="nav__mainNav js--main-nav" id='js--main-nav'>
+                    <li class="nav__mainNav--Item">
+                            <a href="https://take2tech.ca">Home</a>
+                    </li>
                     <li class="nav__mainNav--Item">
                         <span>
                             <a href="https://take2tech.ca#projects">View portfolio</a>

@@ -9,7 +9,20 @@
         list-style: none;
         @include respond(portrait) {
             display: none;
+            background-color: rgba(252, 249, 243, .95);
+            z-index: 1000;
+            margin-top: 0;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 3px;
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            & a {
+                
+            }
         }
+        
         &--Item {
             display: inline-block;           
             &:not(:last-child) {
@@ -18,6 +31,9 @@
             & a:link,
             & a:visited {
                 color: $colorPrimary;
+                @include respond(portrait) {
+                    color: $colorPrimary-dark;
+                }
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 80%;
@@ -39,6 +55,9 @@
             & a:hover,
             & a:active {
                 border-bottom: 2px solid $colorPrimary;
+                @include respond(portrait) {
+                    border-bottom: 2px solid $colorPrimary-dark;
+                }
             }
         }
     }
