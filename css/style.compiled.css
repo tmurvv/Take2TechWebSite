@@ -542,7 +542,7 @@ body {
       padding-top: 4rem; }
       .card__side--front-subText {
         font-style: italic;
-        font-size: 13px; }
+        font-size: 12px; }
       .card__side--front-imgContainer1 {
         width: 76%;
         height: 51%;
@@ -567,7 +567,7 @@ body {
       z-index: -1;
       color: #ffffff; }
       .card__side--back > .o-list {
-        margin: .5rem 2rem 1.5rem;
+        margin: .5rem 2rem;
         text-decoration: none;
         font-size: 80%;
         text-transform: capitalize;
@@ -668,6 +668,20 @@ body {
       border-radius: 3px 3px 0 0;
       color: #fcf9f3;
       text-align: center; }
+    .contact__form--myEmail {
+      width: fit-content;
+      margin: 15px auto; }
+      .contact__form--myEmail a {
+        text-decoration: none;
+        color: teal;
+        padding: 2px;
+        transition: all .4s;
+        border-bottom: 1px solid transparent; }
+        .contact__form--myEmail a:hover {
+          border-bottom: 1px solid teal; }
+      .contact__form--myEmail span {
+        color: teal;
+        font-style: italic; }
     .contact__form--userInputs {
       padding: 10px;
       padding-bottom: 20px;

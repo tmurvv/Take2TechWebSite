@@ -71,6 +71,24 @@ body {
             color: $colorPrimary-light;
             text-align: center;
         }
+        &--myEmail {
+            width: fit-content;
+            margin: 15px auto;
+            & a {
+                text-decoration: none;
+                color: teal;
+                padding: 2px;
+                transition: all .4s;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-bottom: 1px solid teal;
+                }
+            }
+            & span {
+                color: teal;
+                font-style: italic;
+            }
+        }
         &--userInputs {           
             padding: 10px;
             padding-bottom: 20px;

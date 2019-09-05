@@ -131,7 +131,7 @@
                     <div class="contact__form--title">
                         <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact Tisha Murvihill</p>';} ?> 
                     </div>
-                    
+                    <div class="contact__form--myEmail"><a href='mailto:tech@take2tech.ca'>tech@take2tech.ca</a>&nbsp;&nbsp;<span>Or...</span></div>
                     <div class="contact__form--userInputs">
                         <div class="contact__form--userInputs-item">
                             <label for="name">Name:</label>
