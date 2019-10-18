@@ -73,16 +73,21 @@
                 <p>Javascript/ES6<br>
                     React<br>
                     HTML/CSS<br>
-                    PHP<br>             
+                    Node.js<br>        
                 </p>
             </div>
             <div class="marquee-wrap">          
                 <div class="marquee">
-                    <p>Fully Responsive<br>
-                        Git version control<br>
+                    <p>PHP<br>
+                        Express<br>
+                        MongoDB<br>
+                        Mongoose<br>
                         React-Hooks<br>
+                        React-Classes<br>
                         React-Router<br>
                         React-Material-ui<br>
+                        Fully Responsive<br>                    
+                        Git version control<br>
                         JSS<br>
                         NPM<br>
                         SQL<br>
@@ -137,9 +142,9 @@
             <div class="footer__menuContainer--menu">
                 <a href="#top" class="footer__menuContainer--menu-item">Home</a>
                 <a href="#projects" class="footer__menuContainer--menu-item">Portfolio</a>
-                <a href="https://take2tech.ca/resume" class="footer__menuContainer--menu-item">Resume</a>
+                <a href="resume.php" class="footer__menuContainer--menu-item">Resume</a>
                 <a href="#about" class="footer__menuContainer--menu-item">About</a>
-                <a href="https://take2tech.ca/contact" class="footer__menuContainer--menu-item">Contact</a>
+                <a href="contact.php" class="footer__menuContainer--menu-item">Contact</a>
             </div>
 
             <div class="footer__menuContainer--social">
@@ -177,7 +182,7 @@
                 callback(params);
             }
     
-            fetchItems ((res) => console.log(res), 'foo', 1);
+            //fetchItems ((res) => console.log(res), 'foo', 1);
 
             //add event listeners -- flip portfolio cards
             const cardTechnicalArray = Array.from(document.querySelectorAll('.js--cardTechnical'));

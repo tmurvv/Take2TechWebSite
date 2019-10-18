@@ -80,7 +80,7 @@ const portfolioCards = [
             altText: "Frecent List WebApp Landing Page"
         },
         siteURL: "https://frecentlist.com",
-        codeURL: "https://github.com/TMurvihillPortfolio/frecenctlistportfolio",
+        codeURL: "https://github.remcom/TMurvihillPortfolio/frecenctlistportfolio",
         tech: ['membership login', 'subscriptions thru PayPal', 'fully responsive', 'vanilla JS', 'PHP/PDO', 'SQL']
     },
     {
@@ -130,6 +130,18 @@ const portfolioCards = [
         siteURL: "https://funfactstrains.take2tech.ca",
         codeURL: "https://github.com/TMurvihillPortfolio/funfactstraingameportfolio",
         tech: ['React Router', 'JSS', 'Material-ui', 'create-react-app', 'Javascript/ES6', 'Git version control']
+    }, 
+    {
+        id: 5,
+        title: "Shared Space Scheduler in Development",
+        subTitle: "Node.js/MongoDB",
+        image: {
+            srcURL: "img/schedulerScreenShot.jpg", 
+            altText: "Shared Space Scheduler Landing Page"
+        },
+        siteURL: "#",
+        codeURL: "#",
+        tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Server-side rendering', 'PUG']
     }   
 ];
 function createTechList(techList) {
