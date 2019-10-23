@@ -172,13 +172,39 @@ const cardHtml = `<div class="card"><div class="card__side card__side--front" id
     </div>
     <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card{%id%}"></i>
 </div></div>`;
+const cardHtmlScheduler = `<div class="card"><div class="card__side card__side--front" id="js--popupcard{%id%}">
+    <p>{%title%}</p>
+    <p class='card__side--front-subText'>{%subTitle%}</p>
+    <div class="card__side--front-imgContainer1">
+        <img class="card__side--front-img" alt="{%altText%}" src="{%srcURL%}">
+    </div>
+
+    <div>
+        <button class="o-linkStyle-light js--cardFrontTechnical1 js--cardTechnical" id='card{%id%}'> Technical Details</button><br>                    
+    </div>
+</div>
+<div class="card__side card__side--back" id="js--backcard{%id%}">
+    {%title%}
+    <br> {%subTitle%}
+    <ul class="o-list">
+        {%techList%}
+    </ul>
+    <div class="card__side--back-btnContainer">                 
+    </div>
+    <i class="fas fa-chevron-left o-linkStyle-light card__side--back-btn js--popCardBack" id="card{%id%}"></i>
+</div></div>`;
 
 //create Card Function
 function createPortCard(card) {
-    let output = cardHtml.replace(/{%title%}/g, card.title);
+    let output;
+    if (card.id === 5) {
+        output = cardHtmlScheduler.replace(/{%title%}/g, card.title);
+    } else {
+        output = cardHtml.replace(/{%title%}/g, card.title);   
+    }
     output = output.replace(/{%subTitle%}/g, card.subTitle);
     output = output.replace(/{%srcURL%}/g, card.image.srcURL);
-    output = output.replace(/{%altText%}/g, card.image.altText);
+    output = output.replace(/{%altText%}/g, card.image.altText);    
     output = output.replace(/{%siteURL%}/g, card.siteURL);
     output = output.replace(/{%codeURL%}/g, card.codeURL);
     output = output.replace(/{%id%}/g, card.id);
