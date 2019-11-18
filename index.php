@@ -78,7 +78,7 @@
             </div>
             <div class="marquee-wrap">          
                 <div class="marquee">
-                    <p>PHP<br>
+                    <p>NodeJS<br>
                         Express<br>
                         MongoDB<br>
                         Mongoose<br>
@@ -88,9 +88,12 @@
                         React-Material-ui<br>
                         Fully Responsive<br>                    
                         Git version control<br>
+                        SEO<br>
                         JSS<br>
                         NPM<br>
                         SQL<br>
+                        SSR<br>
+                        PUG<br>
                         jQuery<br>
                         Cloudinary CDN<br> 
                         Intersection Observer<br>

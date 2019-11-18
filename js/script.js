@@ -11,8 +11,7 @@ function setMenuState() {
     if (windowSize >= 900) {
         mainNav.style.display='block'; 
         hamburger.style.display = 'none';
-        close.style.display='none';              
-        
+        close.style.display='none';                     
     } else {
         mainNav.style.display='none'; 
         hamburger.style.display = 'block';
@@ -139,7 +138,7 @@ const portfolioCards = [
             srcURL: "img/schedulerScreenShot.jpg", 
             altText: "Shared Space Scheduler Landing Page"
         },
-        siteURL: "#",
+        siteURL: "https://schedulervarsityclinic.herokuapp.com",
         codeURL: "#",
         tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Server-side rendering', 'PUG']
     }   

@@ -52,8 +52,8 @@
         
     </header>
     <div class="resume">
-        <img src="/img/tmurvResumeAug2019p1.jpg" alt="" width='100%'>
-        <img src="/img/tmurvResumeAug2019p2.jpg" alt="" width='100%'>
+        <img src="/img/tmurvResumeJan2020-p1.jpg" alt="" width='100%'>
+        <img src="/img/tmurvResumeJan2020-p2.jpg" alt="" width='100%'>
     </div>
     <script>       
         // set state onload
