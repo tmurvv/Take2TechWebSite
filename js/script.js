@@ -79,7 +79,7 @@ const portfolioCards = [
             altText: "Frecent List WebApp Landing Page"
         },
         siteURL: "https://frecentlist.com",
-        codeURL: "https://github.remcom/TMurvihillPortfolio/frecenctlistportfolio",
+        codeURL: "https://github.com/TMurvihillPortfolio/frecenctlistportfolio",
         tech: ['membership login', 'subscriptions thru PayPal', 'fully responsive', 'vanilla JS', 'PHP/PDO', 'SQL']
     },
     {
@@ -132,14 +132,14 @@ const portfolioCards = [
     }, 
     {
         id: 5,
-        title: "Shared Space Scheduler in Development",
+        title: "Shared Space Scheduler API",
         subTitle: "Node.js/MongoDB",
         image: {
             srcURL: "img/schedulerScreenShot.jpg", 
             altText: "Shared Space Scheduler Landing Page"
         },
-        siteURL: "https://schedulervarsityclinic.herokuapp.com",
-        codeURL: "#",
+        siteURL: "https://sharedspacescheduler.herokuapp.com",
+        codeURL: "https://github.com/TMurvihillPortfolio/sharedspacescheduler",
         tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'Server-side rendering', 'PUG']
     }   
 ];
@@ -195,12 +195,8 @@ const cardHtmlScheduler = `<div class="card"><div class="card__side card__side--
 
 //create Card Function
 function createPortCard(card) {
-    let output;
-    if (card.id === 5) {
-        output = cardHtmlScheduler.replace(/{%title%}/g, card.title);
-    } else {
-        output = cardHtml.replace(/{%title%}/g, card.title);   
-    }
+    let output;    
+    output = cardHtml.replace(/{%title%}/g, card.title); 
     output = output.replace(/{%subTitle%}/g, card.subTitle);
     output = output.replace(/{%srcURL%}/g, card.image.srcURL);
     output = output.replace(/{%altText%}/g, card.image.altText);    

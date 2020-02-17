@@ -17,7 +17,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=.085">
     <script src="https://kit.fontawesome.com/0f908e0835.js"></script>
-    <script type="text/javascript" src="js\script.js?v=1.051"></script>
+    <script type="text/javascript" src="js\script.js?v=1.052"></script>
     <title>Tisha Murvihill, Web Developer</title>
 </head>
 <body>
